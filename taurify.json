@@ -1,0 +1,44 @@
+{
+  "api": null,
+  "backend": {
+    "flavor": "deno",
+    "path": ".output/server",
+    "entryPoint": "index.ts"
+  },
+  "productName": "vite",
+  "version": "0.1.0",
+  "identifier": "vite.test.app",
+  "productionSrc": "./client/dist",
+  "devSrc": "http://localhost:8000/",
+  "beforeBuildCommand": "deno run build",
+  "cloudOrgSlug": "myorg",
+  "cloudAppSlug": "myapp",
+  "app": {
+    "icon": "solid.svg",
+    "windows": [
+      {
+        "label": "main",
+        "width": 1200.0,
+        "height": 800.0,
+        "minWidth": 1000.0,
+        "minHeight": 800.0,
+        "title": "vite",
+        "url": "http://localhost:8000"
+      }
+    ],
+    "singleInstance": false
+  },
+  "publicKey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IEU4MzRDODFGNDI0OEI3NDEKUldSQnQwaENIOGcwNkRXVkxpYzhFc1Nmb3ZsS1JnVlEvWVpqa0FmSU45ZmF1Tmx0akJEYUl3dmkK",
+  "iOS": null,
+  "android": null,
+  "windows": null,
+  "linux": null,
+  "macOS": {
+    "targets": [
+      {
+        "bundle": "dmg"
+      }
+    ],
+    "arch": "arm64"
+  }
+}
